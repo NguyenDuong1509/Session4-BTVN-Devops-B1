@@ -9,7 +9,7 @@ services:
       # SỬA LỖI: Đổi 'localhost' thành tên service 'postgres' trong Docker Network
       - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/storex
       - SPRING_DATASOURCE_USERNAME=postgres
-      - SPRING_DATASOURCE_PASSWORD=secret
+      - SPRING_DATASOURCE_PASSWORD=15092004
     depends_on:
       - postgres
     restart: always
@@ -21,10 +21,11 @@ services:
     environment:
       - POSTGRES_DB=storex
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=secret
+      - POSTGRES_PASSWORD=15092004
     volumes:
       - postgres_data:/var/lib/postgresql/data
     restart: always
 
 volumes:
   postgres_data:
+
