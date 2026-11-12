@@ -55,3 +55,4 @@ echo "$CONN_TIME  INFO 1 --- [main] c.s.storex.StorexApplication            : St
 while true; do
     nc -l -p 8080 -e echo -e "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 17\r\n\r\nStoreX API Online" 2>/dev/null || sleep 2
 done
+
